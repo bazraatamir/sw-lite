@@ -65,3 +65,19 @@
 .drop-dawn .drop-items li:hover {
   background-color: gray;
 }
+menu .header-menu .menu-item .drop-dawn .drop-items {
+  position: relative;
+}
+/* menu .header-menu .menu-item .drop-dawn .drop-items */
+.drop-down1 {
+  top: 50px;
+  width: 100%;
+  position: absolute;
+  left: -210px;
+  background-color: #1c325b;
+  display: none;
+}
+
+.menu .header-menu .menu-item .drop-dawn .drop-items .drop:hover ~ .drop-down1 {
+  display: block;
+}
