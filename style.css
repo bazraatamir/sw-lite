@@ -39,12 +39,29 @@
 .drop-dawn {
   position: absolute;
   top: 70px;
-  background-color: #000;
+  background-color: #1c325b;
   width: 100%;
-  height: 200px;
   display: none;
 }
+#check {
+  visibility: hidden;
+}
 
-.menu .header-menu .menu-item li:hover ~ .drop-dawn {
+.menu .header-menu .menu-item #check:checked ~ .drop-dawn {
   display: block;
+}
+
+.drop-dawn .drop-items li {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.drop-dawn .drop-items li a {
+  color: #fff;
+  text-decoration: none;
+}
+.drop-dawn .drop-items li:hover {
+  background-color: gray;
 }
